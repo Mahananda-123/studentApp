@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Students</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<button onclick="goBack()" class="back-btn">⬅ Back</button>
+
+
+  <div class="container">
+    <h2>Add Student</h2>
+
+    <input id="name" placeholder="Name">
+    <input id="roll" placeholder="Roll No">
+    <input id="dept" placeholder="Department">
+    <input id="mobile" placeholder="Mobile number">
+
+    <button onclick="addStudent()">Add Student</button>
+  </div>
+
+  <div class="table-container">
+    <h3>Student List</h3>
+    <table id="studentTable">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Roll No</th>
+          <th>Department</th>
+          <th>Mobile Number</th>
+          <th>Delete</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <script src="js/students.js"></script>
+  <script>
+  function goBack() {
+    window.location.href = "dashboard.html";
+  }
+</script>
+
+</body>
+</html>
