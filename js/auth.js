@@ -1,4 +1,4 @@
-const API = "https://studentapp-b4tu.onrender.com/api";
+const API = "/api";
 
 async function login() {
   const email = document.getElementById("email").value;

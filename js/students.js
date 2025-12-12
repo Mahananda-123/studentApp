@@ -1,4 +1,4 @@
-const API = "https://studentapp-b4tu.onrender.com/api";
+const API = "/api";
 const token = localStorage.getItem("token");
 
 if (!token) {
