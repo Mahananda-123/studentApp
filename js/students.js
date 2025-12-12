@@ -12,7 +12,6 @@ async function fetchStudents() {
   });
 
   const students = await res.json();
-
   const tbody = document.querySelector("#studentTable tbody");
   tbody.innerHTML = "";
 
@@ -22,10 +21,8 @@ async function fetchStudents() {
         <td>${s.name}</td>
         <td>${s.rollNo}</td>
         <td>${s.department}</td>
-        <td>${s.mobile}</td>   <!-- FIXED -->
-        <td>
-          <button class="delete-btn" onclick="deleteStudent('${s._id}')">X</button>
-        </td>
+        <td>${s.mobile}</td>
+        <td><button class="delete-btn" onclick="deleteStudent('${s._id}')">X</button></td>
       </tr>
     `;
   });
@@ -48,7 +45,6 @@ async function addStudent() {
     body: JSON.stringify(student),
   });
 
-  // Clear inputs
   document.getElementById("name").value = "";
   document.getElementById("roll").value = "";
   document.getElementById("dept").value = "";
